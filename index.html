@@ -31,21 +31,27 @@
       <h1>Gif Locator</h1>
     </header>
     <main>
-      <input type="text" value="search" />
-      <select name="dropdown" id="dropdown">
-        <option value="5">5</option>
-        <option value="10">10</option>
-        <option value="20">20</option>
-        <option value="25">25</option>
-        <option value="35">35</option>
-        <option value="50">50</option>
-      </select>
+      <div class="input-area">
+        <label for="search"> Find your Gif: </label>
+        <input type="text" placeholder="search" name="search" autofocus />
+        <select name="dropdown" id="dropdown">
+          <option value="5">5</option>
+          <option value="10" selected="selected">10</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+          <option value="35">35</option>
+          <option value="50">50</option>
+        </select>
+      </div>
       <button class="submit-btn">Search</button>
-      <div class="container"></div>
+      <div class="container">
+        <img src="https://media2.giphy.com/media/6y6fyAD9OIE6NvhJEu/giphy.gif?cid=5bd6becdyqa2lw4ugi1mp1tywyqsl0bn31x0sojbvhhkr3gp&ep=v1_gifs_search&rid=giphy.gif&ct=g%27" alt="penguan">
+        <img src="https://media2.giphy.com/media/26n6WywJyh39n1pBu/giphy.gif?cid=5bd6becdj7s5lkh434wnljd61cuxa9dmc5fdcnvzkieq07wj&ep=v1_gifs_search&rid=giphy.gif&ct=g%27" alt="search">
+      </div>
     </main>
     <footer>
       <span> &copy; Created By:</span>
-      <span> Aslan Mammadov</span>
+      <span class="footer-name"> Aslan Mammadov</span>
     </footer>
     <script src="./script.js"></script>
   </body>
