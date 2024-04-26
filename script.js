@@ -4,6 +4,7 @@ const searchBtn = document.querySelector(".js-search-btn");
 let search = document.querySelector(".js-search-item");
 let quantity = document.querySelector(".js-quantity");
 let container = document.querySelector(".js-container");
+let menuBtn=document.querySelector(".js-menu-btn");
 
 searchBtn.addEventListener("click", async () => {
   let searchValue = search.value;
@@ -32,4 +33,9 @@ searchBtn.addEventListener("click", async () => {
   } catch {
     container.innerHTML += `<h3 class='warning'>No results found.</h3>`;
   }
+});
+
+menuBtn.addEventListener("click", ()=>{
+    let menu=document.querySelector('.js-hidden');
+    menu.classList.toggle('hidden');
 });
