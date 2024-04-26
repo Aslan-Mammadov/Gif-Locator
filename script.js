@@ -21,7 +21,6 @@ searchBtn.addEventListener("click", async () => {
     let responseJson = await response.json();
     let data = responseJson.data;
     container.innerHTML = "";
-    console.log(data.length);
     if (data.length > 0) {
       for (let x in data) {
         container.innerHTML =
