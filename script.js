@@ -10,8 +10,8 @@ searchBtn.addEventListener("click", async () => {
   let searchValue = search.value;
   let quantityValue = quantity.value;
   search.value = "";
-  if (searchValue == "") {
-    container.innerHTML = `<h3 class='warning'>Please Enter Valid Search</h3>`;
+  if (searchValue.trim() === "") {
+    container.innerHTML = `<p class='warning'>Please Enter Valid Search</p>`;
     return;
   }
   try {
@@ -27,14 +27,14 @@ searchBtn.addEventListener("click", async () => {
           container.innerHTML + `<img src=${data[x].images.original.url}>`;
       }
     } else {
-      container.innerHTML = `<h3 class='warning'>Sorry. No result has found.</h3>`;
+      container.innerHTML = `<p class='warning'>Sorry. No results has been found.</p>`;
     }
   } catch {
-    container.innerHTML += `<h3 class='warning'>No results found.</h3>`;
+    container.innerHTML += `<p class='warning'>Sorry No results has been found.</p>`;
   }
 });
 
 menuBtn.addEventListener("click", ()=>{
-    let menu=document.querySelector('.js-hidden');
+    let menu=document.querySelector('.js-menu-items');
     menu.classList.toggle('hidden');
 });
