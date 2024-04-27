@@ -89,7 +89,7 @@ select {
 }
 img {
   width: 90%;
-  margin: 20px auto;
+  margin: 20px 10px;
   margin-top: 20px;
 }
 footer {
@@ -108,9 +108,9 @@ footer {
   color: rgb(225, 219, 219);
 }
 .warning {
-  font-size: 25px;
-  color: rgb(206, 137, 32);
-  background-color: rgba(228, 224, 220, 0.6);
+  font-size: 35px;
+  color: rgb(206, 107, 32);
+  background-color: rgba(228, 220, 228, 0.6);
   align-content: center;
   height: 150px;
   width: 90%;
