@@ -5,6 +5,7 @@ let search = document.querySelector(".js-search-item");
 let quantity = document.querySelector(".js-quantity");
 let container = document.querySelector(".js-container");
 let menuBtn=document.querySelector(".js-menu-btn");
+let menu=document.querySelector('.js-menu-items');
 
 searchBtn.addEventListener("click", async () => {
   let searchValue = search.value;
@@ -34,7 +35,13 @@ searchBtn.addEventListener("click", async () => {
   }
 });
 
+function displayMenu(){
+  if(window.innerWidth < 768){
+  menu.classList.add("hidden");
+  }
+}
+displayMenu();
+
 menuBtn.addEventListener("click", ()=>{
-    let menu=document.querySelector('.js-menu-items');
     menu.classList.toggle('hidden');
 });
