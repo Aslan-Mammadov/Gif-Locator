@@ -28,10 +28,10 @@ searchBtn.addEventListener("click", async () => {
           container.innerHTML + `<img src=${data[x].images.original.url}>`;
       }
     } else {
-      container.innerHTML = `<p class='warning'>Sorry. No results has been found.</p>`;
+      container.innerHTML = `<p class='warning'>Sorry. No results have been found.</p>`;
     }
   } catch {
-    container.innerHTML += `<p class='warning'>Sorry No results has been found.</p>`;
+    container.innerHTML += `<p class='warning'>Sorry No results have been found.</p>`;
   }
 });
 
