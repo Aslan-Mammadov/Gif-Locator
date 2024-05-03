@@ -5,6 +5,7 @@ Gif Locator is a web application that allows users to search for GIFs.
 ## User Stories
 
 - As a user, I want to be able to search for GIFs, so I can find GIFs based on my interests.
+- As a user, I want to to be able to share the gifs I like with my friends.
 
 ## Features
 
